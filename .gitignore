@@ -1,5 +1,6 @@
 bookenv/
 .vscode
+requirement.txt
 # colllect static output
 staticfiles/
 

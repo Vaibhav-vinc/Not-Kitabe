@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 * {
     outline: none;
     box-sizing: border-box;
@@ -22,7 +23,7 @@
     display: flex;
     padding: 25px;
     width: 33.33%;
-    height: 250px;
+    min-height: 250px;
     background-color: #133050;
 }
 
@@ -65,6 +66,7 @@
     padding: 0 20px;
     color: #ffffff;
     overflow: hidden;
+    width: 100%;
 }
 
 .book-voters {
@@ -121,13 +123,16 @@
         width: 120px;
         font-size: 13px;
     }
+
     .book-photo {
         width: 130px;
     }
+
     .more-details {
         font-size: 13px !important;
         right: 22% !important;
     }
+
     .rating-block {
         font-size: 13px !important;
     }
@@ -137,14 +142,11 @@
     text-align: center;
     background-color: #3d348b;
     color: #fff;
+    max-width: 8.75rem;
     font-weight: 600;
     font-size: 15px;
     border-radius: 20px;
-    position: absolute;
-    right: 26%;
-    margin-top: 20%;
-    bottom: 70px;
-    margin-right: -12px;
+    border: 2px solid #3d348b;
 }
 
 .more-details:hover {
@@ -161,20 +163,30 @@
     font-size: 15px;
     border-radius: 20px;
     padding: 8px;
-    bottom: 10px;
-    position: absolute;
-    left: 50%;
+    max-width: 8.75rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .more-details {
     padding-left: -2px;
 }
 
-.rating-block:hover {
-    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-    transition: all 0.4s ease 0s;
+.rating-block:hover *,
+.rating-block *:hover {
+    transition: all 0.2s ease;
 }
 
 .rateYo {
     display: none;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 20%;
+    align-items: center;
 }

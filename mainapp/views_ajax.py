@@ -51,7 +51,7 @@ def book_summary(request):
         URL = "https://www.goodreads.com/book/show/" + bookid
         page = requests.get(URL)
         soup = BeautifulSoup(page.content, "html.parser")
-        div_container = soup.find(id="description")
+        div_container = soup.find("div", attrs={"data-testid": "description"})
         full_book_summary = ""
         if not div_container:
             return JsonResponse({"success": False}, status=200)

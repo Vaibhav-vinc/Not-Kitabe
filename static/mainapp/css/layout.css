@@ -10,11 +10,11 @@ body {
     float: right;
 }
 
-
 /* Custom Scrollbar */
 
 body::-webkit-scrollbar {
     width: 13px;
+    border-radius: 10px;
     background-color: #fff;
 }
 
@@ -28,16 +28,11 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-/* For Firefox */
-
 body {
     overflow-y: scroll;
     scrollbar-color: #ec9108 rgb(255, 255, 255);
     scrollbar-width: thin;
 }
-
-
-/* nav bar css */
 
 .nav-item {
     display: flex !important;
@@ -65,9 +60,6 @@ body {
     margin-top: 12px !important;
 }
 
-
-/*-------------------------Drop down library -----------------------*/
-
 .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -77,8 +69,6 @@ body {
     background-color: peachpuff;
 }
 
-
-/* -------------------------search bar-----------------------  */
 
 .searchbar {
     font-family: "Kumbh Sans", sans-serif;
@@ -142,7 +132,7 @@ body {
 .modal .modal-title {
     padding: 0.3rem;
     margin: 0;
-    font-size: 1.15rem;
+    font-size: 1.5rem;
     color: #fff;
 }
 
@@ -176,10 +166,7 @@ body {
 }
 
 
-/*  -------------------------------------------------------------------------------fotter css -------------------------------------------------*/
-
-
-/*FOOTER*/
+/* FOOTER */
 
 .footer-content {
     padding: 15px;
@@ -222,18 +209,22 @@ footer a:hover {
         right: 75px;
         margin: 10px;
     }
+
     .navbar-light .navbar-toggler {
         position: absolute;
         right: 1rem;
         top: 1.4rem;
     }
+
     .navbrandimg {
         position: absolute;
         top: 15px;
     }
+
     .nav-icon-s {
         display: none;
     }
+
     li.nav-item {
         margin-top: -25px;
         margin-bottom: 15px;
@@ -246,29 +237,36 @@ footer a:hover {
         padding-left: 0%;
         width: 200px;
     }
+
     .navbar-brand {
         width: 8px;
         margin-right: 28px;
         padding-left: 0;
     }
+
     .navbrandimg {
         width: 65px;
         padding-right: 5px;
     }
+
     .img-book {
         height: 140px !important;
     }
+
     .nav-icon-s {
         display: none;
     }
+
     .nav-link {
         margin-top: -2px;
         margin-top: -25px;
     }
+
     .nav-link:hover {
         text-decoration: underline;
         font-weight: 100;
     }
+
     body::-webkit-scrollbar {
         width: 5px;
     }

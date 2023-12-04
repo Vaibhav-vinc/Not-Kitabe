@@ -125,7 +125,7 @@
                 <div class="modal-body">
                     <div class="row">
 
-                        <div class="col-8">
+                        <div class="col-7">
                             <strong>Summary: </strong><br>
                             <img id="loading" src="{% static 'mainapp/gif/loading.gif' %}">
                             <p id="booksummary">
@@ -190,6 +190,7 @@
 
         // get book summary
         function getsummary(bookid) {
+            console.info('Getting summary!');
             $.ajax({
                 data: {
                     'bookid': bookid,
@@ -280,9 +281,10 @@
 
         $("#bookName").focus(function() {
                 $('#search-dropdown').show();
-            }).blur(function() {
-                $('#search-dropdown').hide(150);
             })
+            // .blur(function() {
+            //     $('#search-dropdown').hide(150);
+            // })
             //for rating a book
         $(function() {
 
