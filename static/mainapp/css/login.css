@@ -91,20 +91,6 @@ fa-google {
     padding-right: 5px;
 }
 
-.googlebutton {
-    position: relative;
-    background-color: #f25f5c;
-    font-family: "Fredoka One", cursive;
-    color: white;
-    padding: 7px 5px;
-    border: 2px solid white;
-    border-radius: 15px;
-    text-decoration: none !important;
-    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.5);
-    border: 3px solid #fff;
-    bottom: -1%;
-    left: 3px;
-}
 
 .forgotpassword {
     font-family: 'Raleway', sans-serif;
@@ -112,12 +98,6 @@ fa-google {
     position: relative;
     left: 30px;
     top: 10px;
-}
-
-.googlebutton:hover {
-    color: #f25f5c;
-    background-color: white;
-    border: 3px solid #f25f5c;
 }
 
 strong {
@@ -128,9 +108,7 @@ strong {
     .img-block {
         display: none;
     }
-    .googlebutton {
-        bottom: 2%;
-    }
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -154,9 +132,6 @@ strong {
         font-size: 1.5rem;
         width: 40%;
         left: 30%;
-    }
-    .googlebutton {
-        bottom: 5%;
     }
 }
 

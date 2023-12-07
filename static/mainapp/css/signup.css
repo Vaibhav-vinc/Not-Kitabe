@@ -13,26 +13,8 @@ fa-google {
     padding-right: 5px;
 }
 
-.googlebutton {
-    position: relative;
-    background-color: #f25f5c;
-    font-family: "Fredoka One", cursive;
-    color: white;
-    padding: 6px 5px;
-    border: 2px solid white;
-    border-radius: 15px;
-    text-decoration: none !important;
-    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.5);
-    border: 3px solid #fff;
-    bottom: 9%;
-    left: 1px;
-}
 
-.googlebutton:hover {
-    color: #f25f5c;
-    background-color: white;
-    border: 3px solid #f25f5c;
-}
+
 
 .img-block {
     color: white;
@@ -185,7 +167,5 @@ strong {
         margin-bottom: 2.3rem;
         margin-top: 1.5rem;
     }
-    .googlebutton {
-        margin-top: 1rem;
-    }
+
 }

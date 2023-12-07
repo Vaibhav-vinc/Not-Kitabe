@@ -57,8 +57,6 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "allauth",
     "allauth.account",
-    "allauth.socialaccount",
-    "allauth.socialaccount.providers.google",
     "mainapp",
     "storages",
 ]
@@ -175,16 +173,6 @@ AUTHENICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
-
-SOCIALACCOUNT_PROVIDERS = {
-    "google": {
-        "APP": {
-            "client_id": os.environ.get("KITABE_AUTH_ID"),
-            "secret": os.environ.get("KITABE_AUTH_SECRET"),
-            "key": "",
-        }
-    }
-}
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 

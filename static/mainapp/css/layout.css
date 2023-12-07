@@ -6,9 +6,6 @@ body {
     overflow-x: hidden;
 }
 
-#navbarNav {
-    float: right;
-}
 
 /* Custom Scrollbar */
 
@@ -83,8 +80,8 @@ body {
 }
 
 #searchdropdown {
-    margin-left: 50%;
-    width: 260px;
+    justify-self: flex-end;
+    min-width: 260px;
 }
 
 #searchdropdown #bookName {
@@ -167,7 +164,6 @@ body {
 
 
 /* FOOTER */
-
 .footer-content {
     padding: 15px;
 }
@@ -228,6 +224,15 @@ footer a:hover {
     li.nav-item {
         margin-top: -25px;
         margin-bottom: 15px;
+    }
+}
+.navbar-brand {
+    font-family: Kaoly Demo;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-size: 2rem;
+    &:hover{
+        color: rgba(0, 0, 0, 0.7) !important;
     }
 }
 
